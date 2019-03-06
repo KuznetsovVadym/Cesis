@@ -1,0 +1,2023 @@
+/*Fonts*/
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('../fonts/Poppins-Regular.eot');
+    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Regular.woff') format('woff'),
+        url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins Semibold';
+    src: url('../fonts/Poppins-SemiBold.eot');
+    src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff'),
+        url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins Light';
+    src: url('../fonts/Poppins-Light.eot');
+    src: url('../fonts/Poppins-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Light.woff') format('woff'),
+        url('../fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('../fonts/Poppins-Medium.eot');
+    src: url('../fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Medium.woff') format('woff'),
+        url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Fonts End*/
+
+/*General*/
+body {
+    font-family: 'Poppins Regular', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+.content-width {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.content-width:after,
+.content-width:before {
+    clear: both;
+    display: table;
+    content: " ";
+}
+.content-width-1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.main-btn,
+.main-btn:active,
+.main-btn:focus {
+    width: 190px;
+    height: auto;
+    background-color: inherit;
+    border-radius: 50px;
+    border: 1px solid white;
+    font-size: 12px;
+    font-family: 'Poppins Semibold', sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 22px 10px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.main-btn:hover {
+    background-color: rgb(116, 67, 255);
+    border-color: rgb(116, 67, 255);
+    color: #fff;
+    text-decoration: none;
+}
+.main-retreat-bottom {
+    padding-bottom: 150px;
+}
+.main-retreat-bottom-half {
+    padding-bottom: 100px;
+}
+.retreat-left-right {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.retreat-right {
+    padding-right: 100px;
+}
+.retreat-left {
+    padding-left: 100px;
+}
+.title-text {
+    font-family: 'Poppins Semibold', sans-serif;
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 35px;
+}
+.subtitle {
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    padding-bottom: 35px;
+}
+.paragraph {
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    padding-bottom: 35px;
+    text-align: justify;
+}
+/*--------------------------------------------------------*/
+/*Header*/
+.header-background {
+    height: auto;
+    background-image: url(../image/header-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+}
+.header-bottom-border {
+    height: 3px;
+    background-color: #000;
+}
+.header {
+    position: relative;
+}
+.header .logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 5;
+}
+.header .logo img {
+    width: 80px;
+    height: 50px;
+}
+.header-item {
+    padding: 400px 0 0 0;
+    text-align: center;
+}
+.header-title {
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 200px;
+    text-align: center;
+    font-weight: 900;
+    line-height: 150px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+.header-paragraph {
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0;
+    padding-bottom: 27px;
+    text-align: center;
+}
+.header .main-btn {
+    margin-bottom: 300px;
+}
+.header i {
+    font-size: 36px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+/*Menu*/
+.wrapper-menu {
+    height: 70px;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.header #check-menu {
+    display: none;
+}
+.header label {
+    display: block;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+.burger-line {
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    z-index: 2;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    }
+.line-1 {
+    top: 50px;
+}
+.line-2 {
+    top: 56px;
+    width: 20px;
+}
+.line-3 {
+    top: 62px;
+}
+.main-menu {
+    background-color: rgb(116, 67, 255, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    z-index: 1;
+    overflow-x: hidden;    
+}
+.main-menu .links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.a-wrapper {
+    display: block;
+    height: 100%;
+    padding: 10px 0;
+}
+.header .a-wrapper a {
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.header .a-wrapper a:hover {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 10px;
+}
+#check-menu:checked ~ .main-menu {
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    }
+#check-menu:checked ~ .line-2 {
+    display: none;
+}
+#check-menu:checked ~ .line-1 {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 62px;
+    right: 40px;
+    transition: all 0.4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+#check-menu:checked ~ .line-3 {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: all 0.4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+/*End Menu*/
+/*End Header*/
+/*Info*/
+.creative {
+    padding-left: 150px;
+    overflow: hidden;
+}
+.about-me {
+    padding-right: 150px;
+    overflow: hidden;
+}
+.info-text {
+    width: 40%;
+    float: left;
+}
+.info-img {
+    width: 60%;
+    height: auto;
+    float: left;
+}
+.info-item img {
+    width: 100%;
+    height: auto;
+}
+.info-item .main-btn {
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0;
+}
+.info-item .main-btn:hover {
+    background-color: rgb(116, 67, 255);
+    border-color: rgb(116, 67, 255);
+    color: #fff;
+    text-decoration: none;
+}
+/*End Info*/
+    
+/*Portfolio Links*/
+.portfolio-links {
+    font-family: 'Poppins Medium', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: none;
+}
+.portfolio-links ul {
+    margin: 0;
+}
+.portfolio-links li {
+    display: inline-block;
+    padding-right: 30px;
+}
+.portfolio-links li:last-child {
+    padding-right: 0;
+}
+.portfolio-links a {
+    text-decoration: none;
+    color: rgb(114, 120, 122);
+    font-family: 'Poppins Medium', sans-serif;
+}
+.portfolio-links a:hover {
+    color: #000;
+}
+.portfolio-links a:after {
+    background-color: rgb(116, 67, 255);
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    -ms--transition: width .3s ease-in-out;
+    -o-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.portfolio-links a:hover:after,
+.portfolio-links a:focus:after {
+    width: 100%;
+}
+/*End Portfolio Links*/
+/*Portfolio*/
+.portfolio-item .portfolio-row {
+    overflow: hidden;
+}
+.left-parth,
+.center-parth {
+    float: left;
+}
+.right-parth {
+    float: right;
+}
+.width-half {
+    width: 50%;
+}
+.width-fourth {
+    width: 25%;
+}
+.height-full {
+    height: 800px;
+}
+.height-half {
+    height: 400px;
+}
+.retreat-item {
+    padding: 10px;
+}
+.no-left-retreia-item {
+    padding-left: 0;
+}
+.no-right-retreia-item {
+    padding-right: 0;
+}
+.portfolio-text {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: #fff;
+}
+.portfolio-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Poppins Medium', sans-serif;
+}
+.portfolio-paragraph {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Poppins Semibold', sans-serif;
+}
+.background-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition: all .4s;
+    -moz--transition: all .4s;
+    -ms--transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+.background-item:hover {
+    background-size: 110%;
+}
+.background-image-1 {
+    background-image: url(../image/port1.jpg);
+}
+.background-image-2 {
+    background-image: url(../image/port2.jpg);
+}
+.background-image-3 {
+    background-image: url(../image/port3.jpg);
+}
+.background-image-4 {
+    background-image: url(../image/port4.jpg);
+}
+.background-image-5 {
+    background-image: url(../image/port5.jpg);
+}
+.background-image-6 {
+    background-image: url(../image/port6.jpg);
+}
+.background-image-7 {
+    background-image: url(../image/port7.jpg);
+}
+.background-image-8 {
+    background-image: url(../image/port8.jpg);
+}
+.background-image-9 {
+    background-image: url(../image/port9.jpg);
+}
+.portfolio-item .main-btn {
+    margin-top: 50px;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.portfolio-item .main-btn:hover {
+    background-color: rgb(116, 67, 255);
+    border-color: rgb(116, 67, 255);
+    color: #fff;
+    text-decoration: none;
+}
+.hidden-row {
+    display: none;
+}
+.hidden-row.active {
+    display: block;
+}
+/*End Portfolio*/
+/*Plan*/
+.plan-item {
+    text-align: center;
+}
+.plan-background {
+    background-image: url(../image/pricetable.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+}
+.plan-retreat-top-bottom {
+    padding-top: 150px;
+    padding-bottom: 185px;
+}
+.plan-column {
+    width: 33%;
+    float: left;
+    padding-top: 75px;
+}
+.plan-column h2 {
+    font-family: 'Poppins Semibold', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.plan-column .paragraph {
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.plan-item a {
+    text-decoration: none;
+    color: #fff;
+}
+.plan-item .main-btn {
+    margin-top: 50px;
+}
+.plan-image {
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+.plan-image img {
+    width: 130px;
+    height: auto;
+    visibility: visible;
+}
+.plan-column:hover .plan-image {
+    visibility: visible;
+}
+.plan-column:hover .main-btn {
+    background-color: rgb(116, 67, 255);
+    border-color: rgb(116, 67, 255);
+    color: #fff;
+}
+/*End plan*/
+/*Form*/
+.form-item-row {
+    overflow: hidden;
+    position: relative;
+}
+.form-retreat-left {
+    padding-left: 200px;
+}
+.form-retreat-right {
+    padding-right: 200px;
+}
+.form-item-row img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.form-item-row h2 {
+    display: inline-block;
+    margin: 0;
+    color: rgb(116, 67, 255);
+    font-family: 'Poppins Semibold', sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-bottom: 50px;
+}
+.form-row {
+    width: 100%;
+    height: 93px;
+    border-bottom: 1px solid #d1d1d1;
+    color: #72787a;
+    font-size: 14px;
+    position: relative;
+}
+.form-row input,
+.form-row select {
+    width: 100%;
+    height: inherit;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    position: absolute;
+    top: 68%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.form-row label {
+    position: absolute;
+    top: 68%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+}
+.form-row select {
+    background: url('../image/down-arrow-png.png');
+    background-repeat: no-repeat;
+	background-size: 16px 16px;
+	background-position: right 50%;
+    appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+}
+.form-row form {
+    text-align: left;
+}
+.form-item [type="submit"]{
+    width: 190px;
+    height: 65px;
+    background-color: inherit;
+    border-radius: 50px;
+    border: 1px solid black;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Poppins Semibold', sans-serif;
+    color: #000;
+    padding: 0;
+    margin: 15px 0;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+    text-decoration: none;
+}
+.form-item [type="submit"]:hover {
+    background-color: rgb(116, 67, 255);
+    border-color: rgb(116, 67, 255);
+    color: #fff;
+}
+.form-row:hover {
+    border-bottom-color: rgb(116, 67, 255);
+    
+}
+.form-row:hover,
+.form-row input:hover ~ i {
+    color: rgb(116, 67, 255);
+}
+.form-item form .form-row:last-child {
+    border-bottom: none;
+}
+.form-item .contact {
+    width: 33%;
+    float: left;
+    padding: 0 20px;
+}
+.form-item hr {
+    margin: 0;
+    border-top: 2px solid #eee;
+}
+.form-item h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.form-item .contact p {
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+}
+.form-item .contact a {
+    color: inherit;
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+}
+/*End Form*/
+/*Social*/
+.social-background {
+    background: linear-gradient(to right, rgb(144, 218, 250), rgb(120, 88, 254));
+    overflow: hidden;
+    height: 220px;
+}
+.social-link {
+    width: 16.66%;
+    height: inherit;
+    float: left;
+    border-right: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+}
+.social-link:last-child {
+    border-right: none;
+}
+.social-block i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.social-link:hover {
+    color: #fff;
+}
+.social-link .hidden-text {
+    display: none;
+    font-size: 14px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.social-link:hover .hidden-text {
+    display: block;
+    color: #fff;
+}
+/*End Social*/
+/*Footer*/
+.footer-item .left-parth {
+    width: 50%;
+    padding-right: 100px;
+}
+.footer-item .right-parth {
+    width: 50%;
+    padding-left: 300px;
+}
+.footer-left-parth-header,
+.footer-right-parth-header {
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    padding-bottom: 40px;
+}
+.footer-item img {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 70px;
+    height: auto;
+}
+.footer-left-parth-title {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Poppins Semibold', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+}
+.footer-item a {
+    color: inherit;
+}
+.footer-item .paragraph {
+    color: #72787a;
+}
+.footer-right-parth-title {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins Semibold', sans-serif;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+}
+.footer-item form {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #72787a;
+    text-align: justify;
+    position: relative
+}
+.subskribe {
+    border: none;
+    outline: none;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    
+}
+.footer-item [type="submit"] {
+    background: url(../image/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 25px;
+    width: 100%;
+    border: none;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+.background-border {
+    height: 3px;
+    background-color: #000;
+}
+/*End Footer*/
+
+
+/*------------------------------------*/
+/*Responsive rules*/
+
+@media (max-width: 1880px) {
+    /*Portfolio*/
+    .height-full {
+        height: 750px;
+    }
+    .height-half {
+        height: 375px;
+    }
+}
+@media (max-width: 1780px) {
+    /*Portfolio*/
+    .height-full {
+        height: 700px;
+    }
+    .height-half {
+        height: 350px;
+    }
+    /*Social*/
+    .social-background {
+        height: 210px;
+    }
+}
+@media (max-width: 1680px) {
+    /*Header*/
+    .header .logo img {
+        width: 75px;
+        height: 48px;
+    }
+    /*Portfolio*/
+    .height-full {
+        height: 650px;
+    }
+    .height-half {
+        height: 325px;
+    }
+    /*Social*/
+    .social-background {
+        height: 200px;
+    }
+}
+@media (max-width: 1600px) {
+    /*General*/
+    .main-retreat-bottom {
+        padding-bottom: 140px;
+    }
+    .main-retreat-bottom-half {
+        padding-bottom: 90px;
+    }
+    .plan-retreat-top-bottom {
+        padding-top: 140px;
+        padding-bottom: 170px;
+    }
+    .retreat-left-right {
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+    /*.form-retreat-left-right {
+        padding-left: 125px;
+        padding-right: 125px;
+    }*/
+    .retreat-right {
+        padding-right: 75px;
+    }
+    .retreat-left {
+        padding-left: 75px;
+    }
+    .title-text {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .paragraph {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0;
+        text-align: justify;
+    }
+    /*Header*/
+    .header-title {
+        font-size: 175px;
+        line-height: 150px;
+    }
+    /*Info*/
+    .creative {
+        padding-left: 125px;
+    }
+    .about-me {
+        padding-right: 125px;
+    }
+    /*Portfolio*/
+    .height-full {
+        height: 600px;
+    }
+    .height-half {
+        height: 300px;
+    }
+    /*Footer*/
+    .footer-item .left-parth {
+        padding-right: 80px;
+    }
+    .footer-item .right-parth {
+        padding-left: 250px;
+    }
+}
+@media (max-width: 1450px) {
+    /*General*/
+    .main-retreat-bottom {
+        padding-bottom: 130px;
+    }
+    .main-retreat-bottom-half {
+        padding-bottom: 80px;
+    }
+    .plan-retreat-top-bottom {
+        padding-top: 130px;
+        padding-bottom: 160px;
+    }
+    .retreat-left-right {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .form-retreat-left-right {
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+    .retreat-right {
+        padding-right: 50px;
+    }
+    .retreat-left {
+        padding-left: 50px;
+    }
+    .title-text {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    /*Header*/
+    .header .logo img {
+        width: 70px;
+        height: 45px;
+    }
+    .header-item {
+        padding: 250px 0 0 0;
+    }
+    .header-title {
+        font-size: 150px;
+        line-height: 150px;
+    }
+    .header-paragraph {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .header .main-btn {
+        margin-bottom: 200px;
+    }
+    /*Info*/
+    .creative {
+        padding-left: 100px;
+    }
+    .about-me {
+        padding-right: 100px;
+    }
+    /*Portfolio*/
+    .height-full {
+        height: 550px;
+    }
+    .height-half {
+        height: 275px;
+    }
+    .portfolio-text {
+        bottom: 35px;
+        left: 35px;
+    }
+    .portfolio-title {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .portfolio-paragraph {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    /*Plan*/
+    .plan-column {
+        padding-top: 50px;
+    }
+    .plan-column h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .plan-image img {
+        width: 100px;
+    }
+    /*Form*/
+    .form-retreat-left {
+        padding-left: 150px;
+    }
+    .form-retreat-right {
+        padding-right: 150px;
+    }
+    .form-row {
+        height: 83px;
+    }
+    .form-item h3 {
+        font-size: 25px;
+    }
+    .form-item .contact p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .form-item .contact a {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    /*Social*/
+    /*Social*/
+    .social-background {
+        height: 180px;
+    }
+    .social-link {
+        font-size: 13px;
+    }
+    .social-link .hidden-text {
+        font-size: 11px;
+    }
+    /*Footer*/
+    .footer-item .left-parth {
+        padding-right: 70px;
+    }
+    .footer-item .right-parth {
+        padding-left: 200px;
+    }
+}
+@media (max-width: 1300px) {
+    /*General*/
+    .main-retreat-bottom {
+        padding-bottom: 120px;
+    }
+    .main-retreat-bottom-half {
+        padding-bottom: 70px;
+    }
+    .plan-retreat-top-bottom {
+        padding-top: 120px;
+        padding-bottom: 150px;
+    }
+    .retreat-left-right {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    .form-retreat-left-right {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    .retreat-right {
+        padding-right: 40px;
+    }
+    .retreat-left {
+        padding-left: 40px;
+    }
+    .title-text {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .subtitle {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .paragraph {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    /*Header*/
+    .header .logo img {
+        width: 65px;
+        height: 43px;
+    }
+    /*Info*/
+    .creative {
+        padding-left: 75px;
+    }
+    .about-me {
+        padding-right: 75px;
+    }
+    /*Portfolio Links*/
+    .portfolio-links {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    /*Portfolio*/
+    .height-full {
+        height: 450px;
+    }
+    .height-half {
+        height: 225px;
+    }
+    .portfolio-text {
+        bottom: 20px;
+        left: 20px;
+    }
+    .portfolio-title {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .portfolio-paragraph {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    /*Plan*/
+    .plan-column {
+        padding-top: 40px;
+    }
+    .plan-column h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .plan-image img {
+        width: 80px;
+    }
+    /*Form*/
+     .form-retreat-left {
+        padding-left: 100px;
+    }
+    .form-retreat-right {
+        padding-right: 100px;
+    }
+    .form-row {
+        height: 73px;
+    }
+    .form-item h3 {
+        font-size: 22px;
+    }
+    /*Social*/
+    .social-background {
+        height: 170px;
+    }
+    .social-link {
+        font-size: 12px;
+    }
+    .social-link .hidden-text {
+        font-size: 10px;
+    }
+    /*Footer*/
+    .footer-item .left-parth {
+        padding-right: 60px;
+    }
+    .footer-item .right-parth {
+        padding-left: 150px;
+    }
+}
+@media (max-width: 1200px) {
+    /*General*/
+    .main-btn,
+    .form-item [type="submit"] {
+        width: 150px;
+        height: auto;
+        font-size: 12px;
+        padding: 15px 10px;
+    }
+    .main-retreat-bottom {
+        padding-bottom: 110px;
+    }
+    .main-retreat-bottom-half {
+        padding-bottom: 65px;
+    }
+    .plan-retreat-top-bottom {
+        padding-top: 110px;
+        padding-bottom: 140px;
+    }
+    .retreat-left-right {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .form-retreat-left-right {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .retreat-right {
+        padding-right: 25px;
+    }
+    .retreat-left {
+        padding-left: 25px;
+    }
+    /*Header*/
+    .header .logo img {
+        width: 60px;
+        height: 40px;
+    }
+    .header-title {
+        font-size: 130px;
+        line-height: 130px;
+    }
+    .header-paragraph {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .header .main-btn {
+        margin-bottom: 185px;
+    }
+    /*Info*/
+    .creative {
+        padding-left: 50px;
+    }
+    .about-me {
+        padding-right: 50px;
+    }
+    /*Portfolio Links*/
+    .portfolio-links {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    /*Portfolio*/
+    .height-full {
+        height: 500px;
+    }
+    .height-half {
+        height: 250px;
+    }
+    .retreat-item {
+        padding: 5px;
+    }
+    .no-left-retreia-item {
+        padding-left: 0px;
+    }
+    .no-right-retreia-item {
+        padding-right: 0px;
+    }
+    .portfolio-text {
+        bottom: 30px;
+        left: 30px;
+    }
+    .portfolio-title {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .portfolio-paragraph {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    /*Plan*/
+    .plan-column {
+        padding-top: 20px;
+    }
+    .plan-column h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .plan-column .paragraph {
+        font-size: 12px;
+        line-height: 16px;
+        padding-bottom: 8px;
+    }
+    .plan-item .main-btn {
+        margin-top: 25px;
+    }
+    /*Form*/
+    .form-row {
+        height: 73px;
+    }
+    .form-item h3 {
+        font-size: 18px;
+    }
+    .form-item .contact p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .form-item .contact a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    /*Social*/
+    .social-background {
+        height: 150px;
+    }
+    .social-link {
+        font-size: 10px;
+    }
+    .social-link .hidden-text {
+        font-size: 10px;
+    }
+    /*Footer*/
+    .footer-item .left-parth {
+        padding-right: 50px;
+    }
+    .footer-item .right-parth {
+        padding-left: 50px;
+    }
+    .footer-item img {
+        width: 50px;
+        height: auto;
+    }
+    .footer-left-parth-title {
+        font-size: 20px;
+        left: 70px;
+    }
+    .footer-right-parth-title {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1100px) {
+     /*Portfolio*/
+    .height-full {
+        height: 450px;
+    }
+    .height-half {
+        height: 225px;
+    }
+    .portfolio-text {
+        bottom: 25px;
+        left: 25px;
+    }
+}
+@media (max-width: 991px) {
+    /*General*/
+    .main-retreat-bottom {
+        padding-bottom: 100px;
+    }
+    .main-retreat-bottom-half {
+        padding-bottom: 55px;
+    }
+    .plan-retreat-top-bottom {
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+    /*Header*/
+    .header .logo {
+        top: 30px;
+        left: 30px;
+    }
+    .header .logo img {
+        width: 55px;
+        height: 35px;
+    }
+    .header label {
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    .burger-line {
+        right: 30px;
+        top: 30px;
+    }
+    .line-1 {
+        top: 40px;
+    }
+    .line-2 {
+        top: 46px;
+        width: 20px;
+    }
+    .line-3 {
+        top: 52px;
+    }
+    #check-menu:checked ~ .line-1 {
+        top: 52px;
+        right: 30px;
+    }
+    /*Info*/
+    .form-item .subtitle br,
+    .info-item br {
+        display: none;
+    }
+    /*Portfolio*/
+    .height-full {
+        height: 400px;
+    }
+    .height-half {
+        height: 200px;
+    }
+    .portfolio-text {
+        bottom: 20px;
+        left: 20px;
+    }
+    .portfolio-title {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .portfolio-paragraph {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    /*Form*/
+    .form-retreat-left {
+        padding-left: 75px;
+    }
+    .form-retreat-right {
+        padding-right: 75px;
+    }
+    .form-row {
+        height: 63px;
+    }
+    /*Social*/
+    .social-background {
+        height: 140px;
+    }
+}
+@media (max-width: 935px) {
+    /*General*/
+    .main-btn,
+    .form-item [type="submit"] {
+        width: 130px;
+        height: auto;
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+    .main-retreat-bottom {
+        padding-bottom: 90px;
+    }
+    .main-retreat-bottom-half {
+        padding-bottom: 50px;
+    }
+    .plan-retreat-top-bottom {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+    .retreat-left-right {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .form-retreat-left-right {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .title-text {
+        padding-bottom: 20px
+    }
+    .subtitle {
+        padding-bottom: 20px;
+    }
+    .paragraph {
+        padding-bottom: 20px;
+    }
+    /*Header*/
+    .header-title {
+        font-size: 100px;
+        line-height: 80px;
+    }
+    .header-paragraph {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .header .main-btn {
+        margin-bottom: 170px;
+    }
+     /*Info*/
+    .creative {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .creative-item {
+        padding-right: 0px;
+        padding-bottom: 35px;
+    }
+    .wrapper-btn {
+        width: 130px;
+        margin: 0 auto;
+    }
+    .about-me {
+        padding-right: 30px;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-me-item {
+        padding-left: 0px;
+        padding-bottom: 35px;
+    }
+    .info-text {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+    .info-img {
+        width: 100%;
+        float: none;
+    }
+    /*Portfolio Links*/
+    .portfolio-links {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .portfolio-links li {
+        padding-right: 15px;
+    }
+    /*Portfolio*/
+    .height-full {
+        height: 350px;
+    }
+    .height-half {
+        height: 175px;
+    }
+    .portfolio-text {
+        bottom: 15px;
+        left: 15px;
+    }
+    .portfolio-title {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .portfolio-paragraph {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    /*Plan*/
+    .plan-column {
+        padding-top: 15px;
+    }
+    /*Social*/
+    .social-background {
+        height: 120px;
+    }
+}
+@media (max-width: 767px) {
+    /*General*/
+    .main-retreat-bottom {
+        padding-bottom: 70px;
+    }
+    .main-retreat-bottom-half {
+        padding-bottom: 30px;
+    }
+    .plan-retreat-top-bottom {
+        padding-top: 60px;
+        padding-bottom: 65px;
+    }
+    .title-text {
+        font-size: 38px;
+    }
+    .subtitle {
+        font-size: 14px;
+    }
+    /*Header*/
+    .header .logo {
+        top: 25px;
+        left: 25px;
+    }
+    .header .logo img {
+        width: 50px;
+        height: 30px;
+    }
+    .header-title {
+        font-size: 80px;
+    }
+    .header-paragraph {
+        font-size: 16px;
+    }
+    .header label {
+        top: 25px;
+        right: 25px;
+        width: 30px;
+        height: 30px;
+    }
+    .burger-line {
+        right: 25px;
+        top: 25px;
+    }
+    .line-1 {
+        top: 30px;
+    }
+    .line-2 {
+        top: 36px;
+        width: 20px;
+    }
+    .line-3 {
+        top: 42px;
+    }
+    #check-menu:checked ~ .line-1 {
+        top: 42px;
+        right: 25px;
+    }
+    .header .a-wrapper a {
+        font-size: 20px;
+    }
+    .header .a-wrapper a:hover {
+        border: 1px solid #fff;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    /*Portfolio Links*/
+    .portfolio-links li {
+        padding-right: 12px;
+    }
+    /*Portfolio*/
+    .height-full {
+        height: 300px;
+    }
+    .height-half {
+        height: 150px;
+    }
+    .portfolio-text {
+        bottom: 10px;
+        left: 10px;
+    }
+    .portfolio-item .main-btn {
+        margin-top: 30px;
+    }
+    /*Form*/
+    .form-retreat-left {
+        padding-left: 50px;
+    }
+    .form-retreat-right {
+        padding-right: 50px;
+    }
+    .form-row {
+        height: 53px;
+        font-size: 12px;
+    }
+    .form-item-row h2 {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    .form-item h3 {
+        font-size: 16px;
+    }
+    .form-item .contact p {
+        font-size: 12px;
+    }
+    .form-item .contact a {
+        font-size: 12px;
+    }
+    .subskribe {
+        font-size: 12px;
+    }
+    .form-item .form-item-row:nth-child(1) {
+        padding-bottom: 70px;
+    }
+    /*Social*/
+    .social-background {
+        height: 100px;
+    }
+    .social-link {
+        font-size: 8px;
+    }
+    .social-link .hidden-text {
+        font-size: 8px;
+    }
+    /*Footer*/
+    .footer-item .left-parth {
+        padding-right: 25px;
+    }
+    .footer-item .right-parth {
+        padding-left: 25px;
+    }
+    .footer-item img {
+        width: 40px;
+        height: auto;
+    }
+    .footer-left-parth-title {
+        font-size: 18px;
+        left: 50px;
+    }
+    .footer-right-parth-title {
+        font-size: 14px;
+    }
+}
+@media (max-width: 660px) {
+    /*General*/
+    .retreat-left-right {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .form-retreat-left-right {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main-retreat-bottom {
+        padding-bottom: 60px;
+    }
+    .main-retreat-bottom-half {
+        padding-bottom: 25px;
+    }
+    .plan-retreat-top-bottom {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    /*Header*/
+    .header .logo {
+        top: 20px;
+        left: 20px;
+    }
+    .header .logo img {
+        width: 40px;
+        height: 25px;
+    }
+    .header label {
+        top: 20px;
+        right: 20px;
+        width: 25px;
+        height: 25px;
+    }
+    .burger-line {
+        right: 20px;
+        top: 20px;
+    }
+    .line-1 {
+        top: 25px;
+    }
+    .line-2 {
+        top: 31px;
+        width: 20px;
+    }
+    .line-3 {
+        top: 37px;
+    }
+    #check-menu:checked ~ .line-1 {
+        top: 37px;
+        right: 20px;
+    }
+    /*Info*/
+    .creative {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-me {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /*Portfolio Links*/
+    .portfolio-links {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    /*Portfolio*/
+    .height-full {
+        height: 250px;
+    }
+    .height-half {
+        height: 125px;
+    }
+    .portfolio-text {
+        bottom: 10px;
+        left: 10px;
+    }
+    /*Form*/
+    .form-retreat-left {
+        padding-left: 20px;
+    }
+    .form-retreat-right {
+        padding-right: 20px;
+    }
+    .form-row {
+        height: 48px;
+        font-size: 12px;
+    }
+    /*Social*/
+    .social-background {
+        height: 90px;
+    }
+}
+@media (max-width: 540px) {
+    /*General*/
+    .main-retreat-bottom {
+        padding-bottom: 50px;
+    }
+    .main-retreat-bottom-half {
+        padding-bottom: 25px;
+    }
+    .plan-retreat-top-bottom {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .retreat-left-right {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .form-retreat-left-right {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .retreat-right {
+        padding-right: 20px;
+    }
+    .retreat-left {
+        padding-left: 20px;
+    }
+    /*Header*/
+    .header-item {
+        padding: 200px 0 0 0;
+    }
+    .header-title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .header .main-btn {
+        margin-bottom: 150px;
+    }
+    .header i {
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+    /*Info*/
+    .creative {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .creative-item {
+        padding-right: 0px;
+    }
+    .about-me {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-me-item {
+        padding-left: 0px;
+    }
+    /*Portfolio*/
+    .portfolio-item .left-parth,
+    .portfolio-item .center-parth,
+    .portfolio-item .right-parth {
+        float: none;
+    }
+    .retreat-item {
+        padding: 5px 0;
+    }
+    .width-half {
+        width: 100%;
+    }
+    .width-fourth {
+        width: 100%;
+    }
+    .portfolio-item .left-parth,
+    .portfolio-item .center-parth {
+        height: 350px;
+    }
+    .portfolio-item .right-parth {
+        height: 700px;
+    }
+    .height-half {
+        height: 350px;
+    }
+    .background-item {
+        background-size: cover;
+    }
+    /*Plan*/
+    .plan-column {
+        width: 100%;
+        float: none;
+        padding-bottom: 25px;
+    }
+    /*Form*/
+    .form-item .left-parth {
+        padding: 0;
+    }
+    .form-item-row h2 {
+        padding-left: 10px;
+    }
+    .form-item .right-parth {
+        padding: 0 30px;
+    }
+    .form-item form .form-row:last-child {
+        border-bottom: none;
+        position: relative;
+        top: 20px;
+    }
+    .form-item [type="submit"]{
+        margin-top: 0px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .form-item hr {
+        display: none;
+    }
+    .form-item .contact {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    /*Social*/
+    .social-background {
+        height: 70px;
+    }
+    .social .hidden-text {
+        display: none;
+    }
+    .social i {
+        font-size: 12px;
+    }
+    /*Footer*/
+    .footer-item .left-parth {
+        float: none;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    .footer-item .right-parth {
+        float: none;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    .footer-left-parth-header,
+    .footer-right-parth-header {
+        height: 50px;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+    }
+    .footer-left-parth-header img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    .footer-item form {
+        width: 75%;
+    }
+    .footer-item .paragraph {
+        padding: 0;
+    }
+}
+@media (max-width: 425px) {
+    /*General*/
+    .retreat-left-right {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .form-retreat-left-right {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /*Header*/
+    .header .main-btn {
+        margin-bottom: 125px;
+    }
+    /*Info*/
+    .creative {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about-me {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /*Poprtfolio Links*/
+    .portfolio-links li {
+        padding: 0;
+        width: 50%;
+    }
+     /*Portfolio*/
+    .portfolio-item .left-parth,
+    .portfolio-item .center-parth {
+        height: 300px;
+    }
+    .portfolio-item .right-parth {
+        height: 600px;
+    }
+    .height-half {
+        height: 300px;
+    }
+    /*Form*/
+    .form-item .right-parth {
+        padding: 0;
+    }
+    /*Social*/
+    .social-background {
+        height: 50px;
+    }
+    .social i {
+        font-size: 10px;
+    }
+}
+
